@@ -53,6 +53,12 @@ p {
 .logo {
   display: block;
   width: 13%;
+  transition: 0.3s ease;
+  
+
+  &:hover, &:focus {
+    transform: scale(1.05);
+  }
 }
 
 .nav__menu {
@@ -181,8 +187,15 @@ p {
     display: inline-block;
     color: #62E0D9;
     border-bottom: 2px solid #62E0D9;
+
+    &:hover, &:focus {
+      .fa-arrow-right {
+        transform: translateX(5px);
+      }
+    }
   }
   .fa-arrow-right {
+    transition: 0.3s ease;
     text-align: center;
     color: #000;
     margin-left: 25px;

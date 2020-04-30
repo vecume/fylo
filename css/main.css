@@ -59,6 +59,13 @@ p {
 .logo {
   display: block;
   width: 13%;
+  -webkit-transition: 0.3s ease;
+  transition: 0.3s ease;
+}
+
+.logo:hover, .logo:focus {
+  -webkit-transform: scale(1.05);
+          transform: scale(1.05);
 }
 
 .nav__menu {
@@ -199,7 +206,14 @@ p {
   border-bottom: 2px solid #62E0D9;
 }
 
+.motive__text a:hover .fa-arrow-right, .motive__text a:focus .fa-arrow-right {
+  -webkit-transform: translateX(5px);
+          transform: translateX(5px);
+}
+
 .motive__text .fa-arrow-right {
+  -webkit-transition: 0.3s ease;
+  transition: 0.3s ease;
   text-align: center;
   color: #000;
   margin-left: 25px;
